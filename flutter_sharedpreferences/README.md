@@ -37,19 +37,26 @@ This project is a demo on how to use SharedPreferences in Flutter app.
             }
           },
         ),
-	  setVisitingFlage() async{
-    SharedPreferences preferences = await SharedPreferences.getInstance();
-    preferences.setBool("alreadyVisited", true);
-    }
-    getVisitingFlag() async{
-    SharedPreferences preferences = await SharedPreferences.getInstance();
-     /** if there is no data saved with the provieded key, the sharedpreference will return null.
-      *  in this case, we can check whether null can be asigned to the variable or not. We can use null aware operator ??
-      * to assign another value to our variable.
-     */
-     bool alreadyVisited  = preferences.getBool("alreadyVisited") ?? false;
-     return alreadyVisited;
-    }
+	
+```
+	
+Following example functions are accessed in FlatButton's onpressed function. 
+
+```dart
+	setVisitingFlage() async{
+    		SharedPreferences preferences = await SharedPreferences.getInstance();
+    		preferences.setBool("alreadyVisited", true);
+    	}
+    	
+	getVisitingFlag() async{
+    		SharedPreferences preferences = await SharedPreferences.getInstance();
+     		/** if there is no data saved with the provieded key, the sharedpreference will return null.
+      		*  in this case, we can check whether null can be asigned to the variable or not. We can use null aware operator ??
+      		* to assign another value to our variable.
+     		*/
+     		bool alreadyVisited  = preferences.getBool("alreadyVisited") ?? false;
+     		return alreadyVisited;
+    	}
 ```
 Remember that SharedPreferneces needs <i>async await</i> operation to work.
 ### Step 3. Run the code.
