@@ -1,16 +1,9 @@
 # flutter_sharedpreferences
 
-A new Flutter application.
+This project is a demo on how to use SharedPreferences in Flutter app.
 
-## Getting Started
+## Steps
 
-This project is a starting point for a Flutter application.
+1. Add dependency in pubspec.yaml file in under the dependency section. 
+2. Accessing SharedPreference needs async await operations.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
